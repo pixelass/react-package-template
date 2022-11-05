@@ -5,6 +5,9 @@ on:
     types: [opened, synchronize, reopened]
     branches:
       - "**"
+  push:
+    branches:
+      - main
 
 jobs:
   test:
