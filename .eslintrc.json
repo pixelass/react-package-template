@@ -4,6 +4,7 @@
     "typescript",
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
     "plugin:prettier/recommended"
   ],
   "env": {
@@ -17,8 +18,8 @@
       "jsx": true
     }
   },
-  "plugins": ["unicorn", "react-hooks", "import", "prettier", "jest"],
-  "ignorePatterns": ["public", "*.d.ts"],
+  "plugins": ["unicorn", "react-hooks", "import", "jest"],
+  "ignorePatterns": ["dist", "*.d.ts"],
   "rules": {
     "import/order": [
       "error",
@@ -68,7 +69,7 @@
       }
     },
     {
-      "files": "*.{test,spec}.ts",
+      "files": "*.test.ts",
       "rules": {
         "import/no-unassigned-import": "off"
       }
