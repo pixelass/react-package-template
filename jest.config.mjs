@@ -2,6 +2,7 @@ import { defaults } from "jest-config";
 
 const jestConfig = {
 	...defaults,
+	testMatch: ["**/?(*.)test.ts?(x)"],
 	transform: {
 		"^.+\\.(t|j)sx?$": [
 			"@swc/jest",
@@ -16,6 +17,7 @@ const jestConfig = {
 			},
 		],
 	},
+	testEnvironment: "jsdom",
 	transformIgnorePatterns: ["/node_modules/(?!(nanoid)/)"],
 	extensionsToTreatAsEsm: [".ts", ".tsx"],
 };

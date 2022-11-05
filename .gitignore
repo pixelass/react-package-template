@@ -28,13 +28,6 @@ coverage
 # nyc test coverage
 .nyc_output
 
-# Cypress
-cypress/videos
-cypress/screenshots
-cypress/downloads
-cypress/cucumber-json
-
-
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
@@ -58,14 +51,10 @@ node_modules/
 
 # dotenv environment variable files
 .env
-.env.development.local
-.env.test.local
-.env.production.local
 .env.local
-
-# Next.js build output
-.next
-out
+.env.development.local
+.env.production.local
+.env.test.local
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
@@ -83,11 +72,13 @@ out
 # vercel
 .vercel
 
-# parcel
+# build
 dist
-.parcel-cache
+.rollup/cache
 
-## pwa
-public/workbox-*.js
-public/sw.js
-public/pwa
+# package
+*.tgz
+
+
+
+
