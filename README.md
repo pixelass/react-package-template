@@ -27,5 +27,12 @@ This is a template for npm packages with react
 
 ## Configure Codacy
 
-Please create a project on [Codacy](https://www.codacy.com/) and add the `CODACY_PROJECT_TOKEN` to
-your GitHub secrets.
+Create a project on [Codacy](https://www.codacy.com/) and add the `CODACY_PROJECT_TOKEN` to your
+GitHub secrets.
+
+Add your projectId to the badges in this file
+
+```md
+![Codacy coverage](https://img.shields.io/codacy/coverage/<YOUR_PROJECT_ID>?style=for-the-badge)
+![Codacy grade](https://img.shields.io/codacy/grade/<YOUR_PROJECT_ID>?style=for-the-badge)
+```
