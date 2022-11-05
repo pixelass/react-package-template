@@ -11,18 +11,22 @@ describe("useCounter", () => {
 		const { result } = renderHook(() => useCounter());
 		expect(result.current).toHaveProperty("count");
 	});
+
 	test("should return an increment method", () => {
 		const { result } = renderHook(() => useCounter());
 		expect(result.current).toHaveProperty("increment");
 	});
+
 	test("should return a decrement method", () => {
 		const { result } = renderHook(() => useCounter());
 		expect(result.current).toHaveProperty("decrement");
 	});
+
 	test("should return a setCount method", () => {
 		const { result } = renderHook(() => useCounter());
 		expect(result.current).toHaveProperty("setCount");
 	});
+
 	describe("count", () => {
 		test("should match the initialValue", () => {
 			const initialValue = 420;
@@ -30,6 +34,7 @@ describe("useCounter", () => {
 			expect(result.current.count).toBe(initialValue);
 		});
 	});
+
 	describe("increment", () => {
 		test("should increment the value", async () => {
 			const { result } = renderHook(() => useCounter());
@@ -39,6 +44,7 @@ describe("useCounter", () => {
 			expect(result.current.count).toBe(1);
 		});
 	});
+
 	describe("decrement", () => {
 		test("should decrement the value", async () => {
 			const { result } = renderHook(() => useCounter());
@@ -48,6 +54,7 @@ describe("useCounter", () => {
 			expect(result.current.count).toBe(-1);
 		});
 	});
+
 	describe("setCount", () => {
 		test("should set the value", async () => {
 			const { result } = renderHook(() => useCounter());
