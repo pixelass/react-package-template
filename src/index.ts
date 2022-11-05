@@ -1,4 +1,4 @@
 import Counter from "./counter";
-import useCounter from "./use-counter";
+export * from "./hooks";
 
-export { Counter, useCounter };
+export { Counter };
