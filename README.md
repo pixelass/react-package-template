@@ -5,6 +5,8 @@ This is a template for npm packages with react
 ![Codacy coverage](https://img.shields.io/codacy/coverage/a22d58431d614c798ac08fd5414b419e?style=for-the-badge)
 ![Codacy grade](https://img.shields.io/codacy/grade/a22d58431d614c798ac08fd5414b419e?style=for-the-badge)
 
+## Table of Contents
+
 <!-- toc -->
 
 - [Tools](#tools)
@@ -19,7 +21,6 @@ This is a template for npm packages with react
 - [SWC](https://swc.rs/)
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
-- [SWC](https://swc.rs/)
 - [Codacy](https://www.codacy.com/)
 - [Commitlint](https://commitlint.js.org/)
 - [Yarn](https://yarnpkg.com/)
