@@ -5,7 +5,7 @@ import "@testing-library/jest-dom";
 import { act, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
-import Counter from "../counter";
+import Counter from "./counter";
 
 describe("Counter", () => {
 	test("should have two buttons", async () => {

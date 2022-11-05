@@ -4,7 +4,7 @@
 import "@testing-library/jest-dom";
 import { act, renderHook } from "@testing-library/react";
 
-import useCounter from "../use-counter";
+import useCounter from "./use-counter";
 
 describe("useCounter", () => {
 	test("should return a count value", () => {

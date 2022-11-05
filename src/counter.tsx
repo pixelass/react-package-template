@@ -1,4 +1,4 @@
-import useCounter from "./use-counter";
+import useCounter from "./hooks/use-counter";
 
 export interface CounterProps {
 	/**
