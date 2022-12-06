@@ -34,7 +34,20 @@
     }
   },
   "files": [
-    "dist/{**/*,*}(d)?.(m)?[tj]s(.map)?"
+    "dist/**/*.cjs",
+    "dist/**/*.cjs.map",
+    "dist/**/*.d.ts",
+    "dist/**/*.js",
+    "dist/**/*.js.map",
+    "dist/**/*.mjs",
+    "dist/**/*.mjs.map",
+    "dist/*.d.ts",
+    "dist/*.cjs",
+    "dist/*.cjs.map",
+    "dist/*.js",
+    "dist/*.js.map",
+    "dist/*.mjs",
+    "dist/*.mjs.map"
   ],
   "scripts": {
     "build": "yarn rollup",
