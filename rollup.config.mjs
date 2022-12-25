@@ -14,9 +14,9 @@ async function glob(pattern) {
 		return (
 			await Promise.all(
 				files.flatMap(async dirent => {
-					if (dirent.isDirectory() && dirent.name !== "__tests__") {
+					if (dirent.isDirectory() && !/^__(tests|specs)__$/.exec(dirent.name)) {
 						return await glob(path.join(pattern, dirent.name));
-					} else if (dirent.isFile() && !dirent.name.includes(".test.")) {
+					} else if (dirent.isFile() && !/\.(test|spec|cy)\./.exec(dirent.name)) {
 						return path.join(pattern, dirent.name);
 					}
 					return [];
@@ -38,9 +38,10 @@ const config = allFiles.map(filename => {
 			return [
 				...Object.keys({
 					...(pkg.dependencies ?? {}),
+					...(pkg.optionalDependencies ?? {}),
 					...(pkg.peerDependencies ?? {}),
 				}),
-			].some(key => id.startsWith(key) || id.startsWith("."));
+			].some(key => id.startsWith(key));
 		},
 		input: filename,
 		output: [

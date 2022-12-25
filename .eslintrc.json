@@ -20,6 +20,11 @@
   },
   "plugins": ["unicorn", "react-hooks", "import", "jest"],
   "ignorePatterns": ["dist", "*.d.ts"],
+  "settings": {
+    "react": {
+      "version": "18"
+    }
+  },
   "rules": {
     "import/order": [
       "error",
