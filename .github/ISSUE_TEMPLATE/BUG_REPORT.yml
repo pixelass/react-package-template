@@ -3,7 +3,7 @@ description: File a bug report
 title: "[Bug]: "
 labels: ["bug", "triage"]
 assignees:
-  - octocat
+  - pixelass
 body:
   - type: markdown
     attributes:
@@ -32,7 +32,7 @@ body:
       label: Version
       description: What version of our software are you running?
       options:
-        - 1.0.0 (Default)
+        - 0.1.0 (Default)
     validations:
       required: true
   - type: dropdown
@@ -55,7 +55,7 @@ body:
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/pixelass/react-stickyroll/blob/main/.github/CODE_OF_CONDUCT.md)
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
